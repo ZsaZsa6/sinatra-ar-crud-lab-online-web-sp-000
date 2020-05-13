@@ -27,6 +27,7 @@ class ApplicationController < Sinatra::Base
   # binding.pry
     redirect to "/articles/#{ @article.id }"
   end
+  
   #
   get "/articles/:id/edit" do
     @article = Article.find(params[:id])
